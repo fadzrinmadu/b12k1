@@ -6,8 +6,13 @@ function getBiodata() {
 		hobbies: ['Dengar Musik', 'Coding', 'Main Gitar', 'Bermain Game'],
 		is_married: false,
 		list_school: [
-			{}
-		], // <-- HERE
+			{
+				name: 'STMIK CATUR SAKTI KENDARI',
+				year_in: 2017,
+				year_out: null,
+				major: null
+			}
+		],
 		skills: [
 			{skill_name: 'Full Stack Designer', level: 'beginner'}
 		],
