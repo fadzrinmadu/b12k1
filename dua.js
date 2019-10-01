@@ -1,10 +1,10 @@
 function is_username_valid(username) {
-	let regexp = /^[^\b0-9\s\[\]\?\/\<\~\#\'\!\@\$\%\^\&\*\(\)\+\=\}\|\:\"\;\'\,\>\}][a-zA-Z0-9]{5,8}$/
+	let regexp = /^[^\d\s!"#$%&'()*+,\-.\/:;<=>?@[\]\\^_`{|}~][a-z\d]{5,8}$/i;
 	return regexp.test(username);
 }
 
 function is_password_valid(password) {
-	let regexp = /[a-zA-Z0-1]\=/;
+	let regexp = /^(?=.*[A-Z])(?=.*[0-9])(?=.*=)(?=.*[\s!"#$%&'()*+,\-.\/:;<=>?@[\]\\^_`{|}~]){8,}/;
 	return regexp.test(password);
 }
 
